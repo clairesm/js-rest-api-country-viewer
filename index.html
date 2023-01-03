@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src='./main.js' defer></script>
+</head>
+
+<body>
+    <h1>REST API</h1>
+
+    <form action='#'>
+        <label for='selectedRegion'>Region</label>
+        <select type='text' id='selectedRegion' placeholder="Choose a region" required>
+            <option disabled selected value>*select a region</option>
+            <option value="africa">Africa</option>
+            <option value="americas">Americas</option>
+            <option value="asia">Asia</option>option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+        </select>
+
+        <label for='country'>Country</label>
+        <select type='text' id='countryList' required>
+            <option disabled selected value>*select a country</option>
+        </select>
+
+        <a href="#" id="popupBtn" onclick="myFunction()">Show Result</a>
+
+
+        <div id="popup" class="popup-container">
+
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+
+                <div id="output"></div>
+            </div>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
